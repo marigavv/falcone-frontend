@@ -1,0 +1,147 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a space-themed background and font */
+  body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starry background */
+    animation: stars 60s linear infinite;
+  }
+  
+  @keyframes stars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1000px 1000px;
+    }
+  }
+  
+  /* Center the app content */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Headings */
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #ff00ff; /* Neon pink */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+  }
+  
+  /* Buttons */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #000; /* Black text */
+    background-color: #00ffcc; /* Neon cyan */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  button:hover {
+    background-color: #ff00ff; /* Neon pink */
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    transform: scale(1.05);
+  }
+  
+  /* Reset Button */
+  button.reset {
+    background-color: #ff6b6b; /* Neon red */
+    box-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b;
+  }
+  
+  button.reset:hover {
+    background-color: #ff4757; /* Lighter red */
+    box-shadow: 0 0 10px #ff4757, 0 0 20px #ff4757;
+  }
+  
+  /* Results page buttons */
+  .results button {
+    width: auto;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+  
+  
+  /* Error messages */
+.error {
+    color: #ff6b6b; /* Neon red */
+    text-align: center;
+    margin: 10px 0;
+    text-shadow: 0 0 10px #ff6b6b;
+    font-size: 1.1rem;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    border: 1px solid #ff6b6b;
+    border-radius: 5px;
+  }
+  
+  /* Dropdowns */
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #000; /* Black text */
+    background-color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  select:hover {
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  /* Results page */
+  .results {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .results p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #00ffcc; /* Neon cyan */
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .results button {
+    margin-top: 20px;
+  }
